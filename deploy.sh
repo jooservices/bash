@@ -33,9 +33,9 @@ sudo apt -y install php-imagick php-gd php8.1-gd php8.1-imagick imagemagick
 sudo apt -y install php8.1-opcache php8.1-memcache php8.1-memcached php8.1-apcu
 sudo apt -y install php8.1-mysql php8.1-sqlite3
 
-sudo pecl install mongodb
-sudo pecl install redis
-sudo pecl install pcov
+echo '' | sudo pecl install mongodb
+echo '' | sudo pecl install redis
+echo '' | sudo pecl install pcov
 
 # Composer
 wget -O composer-setup.php https://getcomposer.org/installer
