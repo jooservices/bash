@@ -48,6 +48,8 @@ exit;
 wget -O composer-setup.php https://getcomposer.org/installer
 sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 
+sudo apt -y autoclean && sudo apt -y autoremove
+
 echo ~
 mkdir runner1
 echo runner1
