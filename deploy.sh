@@ -38,9 +38,9 @@ echo '' | sudo pecl install redis
 echo '' | sudo pecl install pcov
 
 sudo su
-echo 'extension=mongodb.so' >> /etc/php/8.1/cli/php.ini
-echo 'extension=redis.so' >> /etc/php/8.1/cli/php.ini
-echo 'extension=pcov.so' >> /etc/php/8.1/cli/php.ini
+sudo echo 'extension=mongodb.so' >> /etc/php/8.1/cli/php.ini
+sudo echo 'extension=redis.so' >> /etc/php/8.1/cli/php.ini
+sudo echo 'extension=pcov.so' >> /etc/php/8.1/cli/php.ini
 
 # Composer
 wget -O composer-setup.php https://getcomposer.org/installer
