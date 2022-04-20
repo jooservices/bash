@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt update && sudo apt upgrade -y
- 
+sudo apt -y install git 
 cd ~
 # Docker
 sudo apt-get install \
