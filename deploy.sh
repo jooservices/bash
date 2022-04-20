@@ -15,11 +15,11 @@ echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
   
- sudo apt-get update
- sudo apt-get -y install docker-ce docker-ce-cli containerd.io
- sudo groupadd docker
- sudo usermod -aG docker $USER
- newgrp docker
+sudo apt-get update
+sudo apt-get -y install docker-ce docker-ce-cli containerd.io
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker
 
 # PHP
 sudo apt install software-properties-common
@@ -41,6 +41,8 @@ sudo su
 sudo echo 'extension=mongodb.so' >> /etc/php/8.1/cli/php.ini
 sudo echo 'extension=redis.so' >> /etc/php/8.1/cli/php.ini
 sudo echo 'extension=pcov.so' >> /etc/php/8.1/cli/php.ini
+
+exit;
 
 # Composer
 wget -O composer-setup.php https://getcomposer.org/installer
