@@ -16,7 +16,7 @@ newgrp docker
 
 # PHP
 sudo apt install software-properties-common
-sudo add-apt-repository ppa:ondrej/php
+sudo add-apt-repository ppa:ondrej/php // Will not work on Pi 4
 sudo apt update && sudo apt upgrade -y
 
 sudo apt install -y php-dev
