@@ -42,4 +42,4 @@ cd runner1
 mkdir actions-runner && cd actions-runner
 curl -o actions-runner-linux-arm64-2.290.1.tar.gz -L https://github.com/actions/runner/releases/download/v2.290.1/actions-runner-linux-arm64-2.290.1.tar.gz
 echo "640596ec55df33efe1fff086e1379c1108cba6656791807708cdb664de51fb01  actions-runner-linux-arm64-2.290.1.tar.gz" | shasum -a 256 -c
-tar xzf ./actions-runner-linux-x64-2.290.1.tar.gz
+tar xzf ./actions-runner-linux-arm64-2.290.1.tar.gz
