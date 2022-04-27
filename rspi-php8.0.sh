@@ -37,6 +37,15 @@ sudo update-alternatives --set php /usr/bin/php8.0
 sudo update-alternatives --set php-config /usr/bin/php-config8.0
 sudo update-alternatives --set phpize /usr/bin/phpize8.0
 
+echo '' | sudo pecl install mongodb
+echo '' | sudo pecl install redis
+echo '' | sudo pecl install pcov
+
+sudo su
+sudo echo 'extension=mongodb.so' >> /etc/php/8.0/cli/php.ini
+sudo echo 'extension=redis.so' >> /etc/php/8.0/cli/php.ini
+sudo echo 'extension=pcov.so' >> /etc/php/8.0/cli/php.ini
+
 # Composer
 wget -O composer-setup.php https://getcomposer.org/installer
 sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
