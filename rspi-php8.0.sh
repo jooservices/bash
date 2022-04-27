@@ -23,9 +23,10 @@ echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | sudo tee /et
 
 sudo apt update && sudo apt upgrade -y
 
+sudo apt install -y php8.0-dev
 sudo apt install -y php-dev
-sudo apt -y install php-cli php-mbstring \
-  php8.1-cli php8.1-curl php8.1-dev php8.1-igbinary php8.1-intl php8.1-mbstring php8.1-mcrypt php8.1-xml php8.1-xmlrpc php8.1-xsl php8.1-yaml php8.1-zip
+sudo apt -y install php8.0-cli php8.0-curl php8.0-igbinary php8.0-intl php8.0-mbstring php8.0-mcrypt php8.0-xml php8.0-xmlrpc php8.0-xsl php8.0-yaml php8.0-zip
+
 sudo apt -y install php-imagick php-gd php8.1-gd php8.1-imagick imagemagick
 sudo apt -y install php8.1-opcache php8.1-memcache php8.1-memcached php8.1-apcu
 sudo apt -y install php8.1-mysql php8.1-sqlite3
