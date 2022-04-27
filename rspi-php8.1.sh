@@ -31,6 +31,10 @@ sudo apt -y install php8.1-gd php8.1-imagick imagemagick
 sudo apt -y install php8.1-opcache php8.1-memcache php8.1-memcached php8.1-apcu
 sudo apt -y install php8.1-mysql php8.1-sqlite3
 
+echo '' | sudo pecl install mongodb
+echo '' | sudo pecl install redis
+echo '' | sudo pecl install pcov
+
 # Set PHP 8.1
 sudo update-alternatives --set php /usr/bin/php8.1
 sudo update-alternatives --set php-config /usr/bin/php-config8.1
