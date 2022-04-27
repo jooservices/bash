@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo 'Setup for Raspberry Pi 4 with PHP 8.0'
+
 sudo apt update && sudo apt upgrade -y
 sudo apt -y install git 
 cd ~
