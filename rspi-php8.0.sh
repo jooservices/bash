@@ -46,7 +46,9 @@ sudo apt -y autoclean && sudo apt -y autoremove
 # SSH
 ssh-keygen -t rsa -b 4096 -C "jooservices@gmail.com" -f ~/.ssh/id_rsa -N ''
 
-echo ~
+# Github
+
+cd ~
 mkdir runner1
 cd runner1
 mkdir actions-runner && cd actions-runner
