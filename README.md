@@ -5,4 +5,4 @@ Automate install required packages for PHP Runner server
 - Docker
 - Runner located under ~/runner1
 
-curl -L https://raw.githubusercontent.com/jooservices/github-runner/main/deploy.sh | bash
+curl -L https://raw.githubusercontent.com/jooservices/bash/main/deploy.sh | bash
