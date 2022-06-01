@@ -2,17 +2,6 @@
 
 sudo apt update && sudo apt upgrade -y
 sudo apt -y install git 
-cd ~
-# Docker
-sudo apt-get install \
-    ca-certificates \
-    curl \
-    gnupg \
-    lsb-release
-    
-curl -sSL https://get.docker.com | sh
-sudo usermod -aG docker ${USER}
-newgrp docker
 
 # PHP
 sudo apt install software-properties-common
@@ -49,3 +38,15 @@ mkdir actions-runner && cd actions-runner
 curl -o actions-runner-osx-x64-2.291.1.tar.gz -L https://github.com/actions/runner/releases/download/v2.291.1/actions-runner-osx-x64-2.291.1.tar.gz
 echo "1ed51d6f35af946e97bb1e10f1272197ded20dd55186ae463563cd2f58f476dc  actions-runner-osx-x64-2.291.1.tar.gz" | shasum -a 256 -c
 tar xzf ./actions-runner-osx-x64-2.291.1.tar.gz
+
+cd ~
+# Docker
+sudo apt-get install \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+    
+curl -sSL https://get.docker.com | sh
+sudo usermod -aG docker ${USER}
+newgrp docker
