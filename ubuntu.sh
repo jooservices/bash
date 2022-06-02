@@ -7,7 +7,6 @@ git config --global user.name "Viet Vu"
 
 # PHP
 sudo apt install software-properties-common
-# Will not work on Pi 4
 sudo add-apt-repository ppa:ondrej/php
 sudo apt update && sudo apt upgrade -y
 
