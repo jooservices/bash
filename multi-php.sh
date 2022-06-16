@@ -22,8 +22,7 @@ do
   for phpPecl in "${phpPecls[@]}"
   do
     sudo pecl -d php_suffix="${phpVersion}" install "${phpPecl}"
-    sudo pecl uninstall -r "${phpPecl}"
-    sudo su
+    sudo pecl uninstall -r "${phpPecl}"    
     sudo bash -c 'echo "extension='${phpPecl}'.so" >> /etc/php/'${phpVersion}'/cli/php.ini'
     exit;
   done
