@@ -10,3 +10,7 @@ sudo apt-get install \
 curl -sSL https://get.docker.com | sh
 sudo usermod -aG docker ${USER}
 newgrp docker
+
+systemctl start docker
+systemctl enable docker
+systemctl status docker
