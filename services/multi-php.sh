@@ -14,6 +14,7 @@ for phpVersion in "${phpVersions[@]}"
 do
   echo "Install PHP ${phpVersion} extensions"
   extensions=$(printf "php${phpVersion}-%s " "${phpExtensions[@]}")
+  sudo apt install -y extensions
 
   echo "Install PHP ${phpVersion} pecl extensions"
   for phpPecl in "${phpPecls[@]}"
