@@ -11,6 +11,6 @@ curl -sSL https://get.docker.com | sh
 sudo usermod -aG docker ${USER}
 newgrp docker
 
-systemctl start docker
-systemctl enable docker
-systemctl status docker
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo systemctl status docker
