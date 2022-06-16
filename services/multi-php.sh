@@ -13,10 +13,7 @@ phpPecls=('mongodb' 'redis' 'pcov' 'apcu')
 for phpVersion in "${phpVersions[@]}"
 do
   echo "Install PHP ${phpVersion} extensions"
-  for phpExtension in "${phpExtensions[@]}"
-  do
-    sudo apt install -y php"${phpVersion}"-"${phpExtension}"
-  done
+  extensions=$(printf "php${phpVersion}-%s " "${phpExtensions[@]}")
 
   echo "Install PHP ${phpVersion} pecl extensions"
   for phpPecl in "${phpPecls[@]}"
