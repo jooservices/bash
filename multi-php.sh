@@ -28,3 +28,7 @@ do
     exit;
   done
 done
+
+echo 'Install composer'
+wget -O composer-setup.php https://getcomposer.org/installer
+sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
