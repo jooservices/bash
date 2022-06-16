@@ -15,7 +15,7 @@ do
   echo "Install PHP ${phpVersion} extensions"
   for phpExtension in "${phpExtensions[@]}"
   do
-    sudo apt install php"${phpVersion}"-"${phpExtension}"
+    sudo apt install -y php"${phpVersion}"-"${phpExtension}"
   done
 
   echo "Install PHP ${phpVersion} pecl extensions"
