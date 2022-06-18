@@ -8,4 +8,4 @@ sudo apt -y install git
 git config --global user.email ${email}
 git config --global user.name ${name}
 
-ssh-keygen -t ed25519 -C $email
+yes '' | ssh-keygen -t ed25519 -C $email
