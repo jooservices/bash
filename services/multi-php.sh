@@ -7,7 +7,7 @@ sudo add-apt-repository ppa:ondrej/php
 sudo apt update && sudo apt upgrade -y
 
 phpVersions=('7.2' '7.3' '7.4' '8.0' '8.1', '8.2')
-phpExtensions=('dev' 'cli' 'mbstring' 'curl' 'intl' 'mbstring' 'mcrypt' 'xml' 'xmlrpc' 'xsl' 'yaml' 'zip' 'imagick' 'gd' 'opcache' 'memcache' 'memcached' 'mysql' 'sqlite3' 'ldap')
+phpExtensions=('dev' 'cli' 'mbstring' 'curl' 'intl' 'mbstring' 'mcrypt' 'xml' 'xmlrpc' 'xsl' 'yaml' 'zip' 'imagick' 'gd' 'opcache' 'memcache' 'memcached' 'mysql' 'sqlite3' 'ldap', 'fpm')
 phpPecls=('mongodb' 'redis' 'pcov' 'apcu')
 
 for phpVersion in "${phpVersions[@]}"
