@@ -26,6 +26,6 @@ do
   done
 done
 
-echo 'Install composer'
-wget -O composer-setup.php https://getcomposer.org/installer
-sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+#echo 'Install composer'
+#wget -O composer-setup.php https://getcomposer.org/installer
+#sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
