@@ -38,5 +38,7 @@ sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=compose
 
 cd /home/joos/
 git clone https://github.com/jooservices/XCrawler.git
-cd cd /home/joos/XCrawler
+cd /home/joos/XCrawler
 composer install
+
+sudo apt install supervisor -y
