@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version='10.11'
+version='11.06'
 
 sudo apt install -y curl apt-transport-https software-properties-common lsb-release ca-certificates gnupg2
 curl -LsS -O https://downloads.mariadb.com/MariaDB/mariadb_repo_setup
