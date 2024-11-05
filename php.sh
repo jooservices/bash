@@ -6,7 +6,8 @@ sudo apt install -y software-properties-common
 sudo add-apt-repository ppa:ondrej/php
 sudo apt update && sudo apt upgrade -y
 
-phpVersions=('7.4' '8.0' '8.1' '8.2' '8.3')
+# Removed : 7.4
+phpVersions=('8.0' '8.1' '8.2' '8.3')
 phpExtensions=('dev' 'cli' 'mbstring' 'curl' 'intl' 'mbstring' 'xml' 'xmlrpc' 'xsl' 'yaml' 'zip' 'imagick' 'gd' 'opcache' 'memcache' 'memcached' 'mysql' 'sqlite3' 'ldap' 'bcmath' 'fpm')
 phpPecls=('mongodb' 'redis' 'pcov' 'apcu')
 
