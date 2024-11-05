@@ -8,7 +8,8 @@ sudo apt update && sudo apt upgrade -y
 
 # Removed : 7.4
 # Remove : 8.0
-phpVersions=('8.1' '8.2' '8.3')
+# Remove : 8.1
+phpVersions=('8.2' '8.3')
 phpExtensions=('dev' 'cli' 'mbstring' 'curl' 'intl' 'mbstring' 'xml' 'xmlrpc' 'xsl' 'yaml' 'zip' 'imagick' 'gd' 'opcache' 'memcache' 'memcached' 'mysql' 'sqlite3' 'ldap' 'bcmath' 'fpm')
 phpPecls=('mongodb' 'redis' 'pcov' 'apcu')
 
