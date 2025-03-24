@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo echo "joos ALL=(ALL) NOPASSWD:ALL" | sudo tee -a /etc/sudoers
+
 sudo lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv
 sudo resize2fs /dev/mapper/ubuntu--vg-ubuntu--lv
 
@@ -9,12 +11,14 @@ sudo timedatectl set-ntp on
 echo 'Install requirements'
 
 sudo apt install software-properties-common
-sudo add-apt-repository ppa:ondrej/php
+sudo add-apt-repository ppa:ondrej/php -y
 sudo apt update && sudo apt upgrade -y
 
-phpVersions=('8.3')
+sudo apt install nano unzip zip
+
+phpVersions=('8.4')
 phpExtensions=('dev' 'cli' 'mbstring' 'curl' 'intl' 'mbstring' 'xml' 'xmlrpc' 'xsl' 'yaml' 'zip' 'imagick' 'gd' 'opcache' 'memcache' 'memcached' 'mysql' 'sqlite3' 'ldap' 'bcmath' 'fpm')
-phpPecls=('mongodb' 'redis' 'pcov' 'apcu')
+phpPecls=('mongodb' 'redis' 'apcu')
 
 for phpVersion in "${phpVersions[@]}"
 do
@@ -37,8 +41,7 @@ curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php
 sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
 
 cd /home/joos/
-git clone https://github.com/jooservices/XCrawler.git
+git clone https://github.com/jooservices/XCrawlerII.git
 cd /home/joos/XCrawler
-composer install
 
 sudo apt install supervisor -y
