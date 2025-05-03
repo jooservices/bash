@@ -19,6 +19,8 @@ curl -o webmin-setup-repo.sh https://raw.githubusercontent.com/webmin/webmin/mas
 sudo sh webmin-setup-repo.sh
 sudo apt-get install webmin --install-recommends
 
+## Apache
+
 sudo add-apt-repository ppa:ondrej/php -y
 phpVersions=('8.4')
 phpExtensions=('dev' 'cli' 'mbstring' 'curl' 'intl' 'mbstring' 'xml' 'xmlrpc' 'xsl' 'yaml' 'zip' 'imagick' 'gd' 'opcache' 'memcache' 'memcached' 'mysql' 'sqlite3' 'ldap' 'bcmath' 'fpm')
@@ -46,6 +48,18 @@ sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=compose
 
 cd /home/joos/
 git clone https://github.com/jooservices/XCrawlerII.git
-cd /home/joos/XCrawler
+cd /home/joos/XCrawlerII
 
 sudo apt install supervisor -y
+
+sudo tee -a /etc/supervisor/conf.d/xcrawler.conf << END
+[program:laravel]
+process_name=%(program_name)s
+command=php /home/joos/XCrawlerII/artisan horizon
+autostart=true
+autorestart=true
+user=joos
+redirect_stderr=true
+stdout_logfile=/home/joos/XCrawlerII/horizon.log
+stopwaitsecs=7200
+END
