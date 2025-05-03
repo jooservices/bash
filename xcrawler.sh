@@ -10,11 +10,11 @@ sudo timedatectl set-ntp on
 
 echo 'Install requirements'
 
-sudo apt install software-properties-common
-sudo add-apt-repository ppa:ondrej/php -y
 sudo apt update && sudo apt upgrade -y
+sudo apt install software-properties-common
+sudo apt install nano unzip zip git -y
 
-sudo apt install nano unzip zip
+sudo add-apt-repository ppa:ondrej/php -y
 
 phpVersions=('8.4')
 phpExtensions=('dev' 'cli' 'mbstring' 'curl' 'intl' 'mbstring' 'xml' 'xmlrpc' 'xsl' 'yaml' 'zip' 'imagick' 'gd' 'opcache' 'memcache' 'memcached' 'mysql' 'sqlite3' 'ldap' 'bcmath' 'fpm')
