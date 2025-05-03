@@ -16,6 +16,11 @@ sudo apt install nano unzip zip git -y
 
 sudo add-apt-repository ppa:ondrej/php -y
 
+## Webmin
+curl -o webmin-setup-repo.sh https://raw.githubusercontent.com/webmin/webmin/master/webmin-setup-repo.sh
+sudo sh webmin-setup-repo.sh
+sudo apt-get install webmin --install-recommends
+
 phpVersions=('8.4')
 phpExtensions=('dev' 'cli' 'mbstring' 'curl' 'intl' 'mbstring' 'xml' 'xmlrpc' 'xsl' 'yaml' 'zip' 'imagick' 'gd' 'opcache' 'memcache' 'memcached' 'mysql' 'sqlite3' 'ldap' 'bcmath' 'fpm')
 phpPecls=('mongodb' 'redis' 'apcu')
