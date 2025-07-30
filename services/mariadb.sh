@@ -1,5 +1,7 @@
 #!/bin/bash
 
+
+echo "MariaDB installing..."
 version='11.8'
 
 sudo apt install -y curl apt-transport-https software-properties-common lsb-release ca-certificates gnupg2

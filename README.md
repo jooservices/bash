@@ -16,6 +16,7 @@ This repository contains a collection of Bash scripts for various daily tasks an
 - `virtualmin.sh`
 - `webmin.sh`
 - `xcrawler.sh`
+- `mongodb.sh`
 
 ---
 

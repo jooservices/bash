@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo "Setting up sudoers..."
 ## Superuser passwordless sudo
 # Get the current user
 USER_NAME=$(whoami)
