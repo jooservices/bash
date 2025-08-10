@@ -1,2 +1,17 @@
-./.idea
-./.idea/php.xml
+.idea/# Ignore IntelliJ IDEA project files
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/dictionaries
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/inspectionProfiles
+.idea/scopes
+.idea/usage.statistics.xml
+.idea/assetWizardSettings.xml
+.idea/*
+/.idea/aws.xml
+/.idea/codeStyles/codeStyleConfig.xml
+/.idea/copilotDiffState.xml
+/.idea/whisperer_for_laravel.xml

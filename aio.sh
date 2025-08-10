@@ -2,6 +2,12 @@
 
 source ./functions/functions.sh
 
+source ./common/common-functions.sh
+
+get_os_codename
+# Show system information
+show_system_info
+
 # Main script execution starts here
 execute_script "Do you want to set up passwordless sudo for the current user" "./common/sudoer.sh"
 execute_script "Do you want to set the timezone and enable NTP" "./common/time.sh"
