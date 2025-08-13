@@ -14,11 +14,11 @@ execute_script "Do you want to set the timezone and enable NTP" "./common/time.s
 execute_script "Do you want to extend the LVM volume and resize the filesystem" "./common/lvm.sh"
 execute_script "Do you want to update the system and install common tools" "./common/tools.sh"
 # Docker
-execute_script "Do you want to install Docker and Docker Compose" "./servicers/docker.sh"
+execute_script "Do you want to install Docker and Docker Compose" "./services/docker.sh"
 # For GitHub Actions
 execute_script "Setup Git with your email and name" "./common/git.sh"
 # PHP and related installations
-execute_script "Do you want to install PHP PPA repository and PHP versions and extensions" "./servicers/php/php.sh"
+execute_script "Do you want to install PHP PPA repository and PHP versions and extensions" "./services/php/php.sh"
 # MariaDB
 execute_script "Do you want to install MariaDB" "./services/mariadb.sh"
 # Redis
