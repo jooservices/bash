@@ -17,6 +17,6 @@ function execute_script() {
     esac
 }
 
-execute_script "Add PHP PPA repository and install PHP versions and extensions" "./ppa.sh"
+execute_script "Add PHP PPA repository and install PHP versions and extensions" "./services/php/ppa.sh"
 
-execute_script "Install PHP 8.4 and extensions" "./install.sh"
+execute_script "Install PHP 8.4 and extensions" "./services/php/install.sh"
